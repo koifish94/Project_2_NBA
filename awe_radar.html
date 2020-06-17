@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+​
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+​
+    <title>MVP Candidates</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+    <link href='style.awe.css' rel='stylesheet' type='text/css'>
+​
+    <style>
+      p {
+        color: black;
+        text-indent: 30px;
+        text-transform: uppercase;
+      }
+      </style>
+​
+      
+   
+  </head>
+​
+  <body>
+    <!-- Start of navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid navbar-custom">
+​
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="row">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle Navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div class="col-xs-9 phone-nav">
+              <a class="navbar-brand" href="index.html" id="logo">2020 NBA Players</a>
+            </div>
+          </div>
+​
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right navbar-right-custom">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="scatter_garrett.html">Top 50 Players Comparisons</a></li>
+                  <li><a href="chart_n.html">Salary Comparison by Conference and Rating</a></li>
+                  <li><a href="nba_chavez.html">Average Salary Comparisons</a></li>
+                  <li><a href="awe_radar.html">MVP Candidates</a></li>
+                </ul>
+              </li>
+        
+              <li><a href="table.html">Data</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div>
+      </div><!-- /.container-fluid -->
+    </nav>
+    <!-- End of navbar -->
+    
+        <p style="text-align:center right">
+          With the season still underway and the mvp still being up for debate, we have crafted a comparison of mvp candidates so you can decide who walks away as the most valuable player. 
+          The following candidates include Giannis Antetokounmpo, Lebron James, Kawhi Leonard, Anthony Davis and James Harden. 
+          Below you will see a radar chart showcasing the following stats we deemed most important to the mvp race. 
+          This includes points scored per game (PTS), 3 pointers made (3p), 2 pointers made (2P), steals, blocks (BLK), free throws (FT) and turn over rate (TOV). Enjoy!
+         </p>
+      
+​
+            <div class="container">
+                  <div class="left-side-container">
+                    <h1>MVP Candidates</h1>
+                    <div id="Player-container"></div>
+                    
+                  </div>
+​
+                  <div class="right-side-container">
+                    <div>
+                        <h1>MVP Race</h1>
+                        <div class="radarChart"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+             </div>
+            
+​
+         
+​
+​
+<script src="Radar.js"></script>
